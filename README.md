@@ -4,9 +4,11 @@ A pong game designed on FPGA Basys3 board using HDL Verilog
 
 By:
 
-Seba Wahba 
-Roaa
+Seba Wahba, 
+Roaa,
 Sondos
+
+
 Project Report
 
 We followed a modular design approach to design our arcade game. First of all we created a module to control the displaying of the content on the screen and allow us to view pixels in the form of text and pixelated shapes on the screen. In order to display text and images, we must have two other modules for the pixel generation as well as the text generation as they will follow different approaches to viewing different types of data on the monitor. For instance, in order to view text we have used hexadecimal numbers which are encoded in the ascii rom module to represent different characters, numbers and symbols as for the formation of the paddles and ball we have used the ball rom to implement the rounded figure of the ball as it may have ragged edges when you are too close to them so its figure must be represented using rom addresses to show something like this where the stars in the comments represent 1s and the spaces are represented by 0s.
