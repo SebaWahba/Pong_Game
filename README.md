@@ -22,4 +22,6 @@ As for the bonus which is generating sound, we have used a passive buzzer in ord
 Challenges faced: I would say the main challenges were right at the end of the project and the beginning of the project. At the beginning of the project, we struggled to make the monitor output what we coded on the screen and we could not figure out where the issue was, but we later found out where the problem was and we resolved it. Another challenge was figuring out how to design two scores and to increment by one the appropriate score depending on the appropriate paddle every time the ball collided and how to decrement the number of balls every time either of the players lost. The final challenge was to generate the sound, but it was not too tough to solve as in the end the whole problem was that we were not using the right port to output the sound and also we were trying to make it output sound when the paddle collided with the ball.
 
 Here is a video for a fully functional game https://drive.google.com/file/d/1J1DCXzgKwDArCbET8Yi36CepKKRr3rLX/view?usp=drivesdk
+![image](https://github.com/user-attachments/assets/4bb6b5c9-1fd0-4d17-9251-31581ee0fe49)
+
 
