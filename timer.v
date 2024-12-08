@@ -22,10 +22,8 @@
 
 module timer(input clk, reset, timer_start, timer_tick, output timer_up);
    
-    // signal declaration
     reg [6:0] timer_reg, timer_next;
    
-    // register control
     always @(posedge clk or posedge reset)
         if(reset)
             timer_reg <= 7'b1111111;

@@ -43,7 +43,7 @@ module sound_top(input clk_100MHz, play, output speaker);
     A_1000Hz t_c (.clk_100MHz(clk_100MHz), .o_1000Hz(A_1000Hz_signal));
     A_2000Hz t_d (.clk_100MHz(clk_100MHz), .o_2000Hz(A_2000Hz_signal));
 
-    // State Machine Registers and Delays
+    // Timing Parameters
     parameter CLK_FREQ = 100_000_000;                   // 100MHz
     parameter integer D_500ms = 0.50000000 * CLK_FREQ;  // 500ms
     parameter integer D_break = 0.10000000 * CLK_FREQ;  // 100ms

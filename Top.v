@@ -175,7 +175,7 @@ wire soundsHit, soundsOver;
             end
            
             play: begin
-                gra_still = 1'b0;   // animated screen
+                gra_still = 1'b0;
                
                 if(hit) begin
                     d_inc = 1'b1;   // increment score
@@ -208,9 +208,8 @@ wire soundsHit, soundsOver;
                         state_next = newgame;
                         playOver = 1'b0;  // Stop the game over sound after the timer is done
                     end
-                    else begin
+                    else
                         playOver = 1'b1;  // Play the game over sound while the game is over
-                    end
                 end
         endcase          
     end
@@ -218,7 +217,7 @@ wire soundsHit, soundsOver;
     // rgb multiplexing
     always @*
         if(~w_vid_on)
-            rgb_next = 12'h000; // blank
+            rgb_next = 12'h000; // black
        
         else
             if(text_on[3] || ((state_reg == newgame) && text_on[1]) || ((state_reg == gameOver) && text_on[0]))
